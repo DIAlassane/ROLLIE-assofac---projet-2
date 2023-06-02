@@ -147,8 +147,101 @@ a {
     background-color: #d4d4d4;
 }
 
-.iconify2 {
-    color: #ADFF45;
-    height: 5vh;
-    width: 10%;
+ul {
+    width: 50%;
+    background-color: #0B3E27;
+    list-style: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+ul li {
+    font-size: 2rem;
+    color: white;
+    padding: 0.2rem;
+}
+
+.ul-2 {
+    width: 80%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1325px) {
+    .information button {
+        font-size: 1rem;
+        border: 0.5px solid black;
+        padding: 0.7rem 4rem 0.7rem 4rem;
+        color: #ADFF45;
+        font-weight: 400;
+        background-color: #0B3E27;
+        cursor: pointer;
+    }
+
+    .ul-2 {
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    .reseaux {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .reseaux .iconify {
+        width: 6%;
+    }
+    
+}
+
+@media screen and (max-width: 1127px) {
+    .information button {
+        padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+    }
+
+    ul li {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    .information button {
+        display: none;
+    }
+
+    .iffo {
+        display: block;
+    }
+
+    .reserch iframe {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .tab-content {
+        margin-left: 20%;
+        margin-top: 2.5rem;
+    }
+
+    .ul-2 {
+        width: 75%;
+    }
+
+    ul {
+        width: 75%;
+    }
+
+    .reseaux {
+        width: 75%;
+        margin-bottom: 1rem;
+    }
+
+    .reserch h2 {
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+    }
 }
