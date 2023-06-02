@@ -75,24 +75,24 @@
 
                 <div class="nom-carte">
                     <h3>Nom du titulaire</h3>
-                    <input class="input-1" type="text">
+                    <input class="input-1" type="text" name="nom" required>
                 </div>
 
                 <div class="nom-carte">
                     <h3>Numero de la carte</h3>
-                    <input class="input-1" type="text">
+                    <input class="input-1" type="text" name="numero-carte" required>
                 </div>
 
                 <div class="exp-cvc">
 
                     <div class="nom-carte">
                         <h3>Date d'expiration</h3>
-                        <input class="input-1" type="date">
+                        <input class="input-1" type="date" name="date-exp" required>
                     </div>
 
                     <div class="nom-carte">
                         <h3>CVC</h3>
-                        <input class="input-1" type="text">
+                        <input class="input-1" type="text" name="cvc" required>
                     </div>
                     
                 </div>
@@ -115,9 +115,11 @@
                 </div>
 
                 <div class="total-2">
-                    <p>0 $</p>
-                    <h2>Valider</h2>
-                    <p> --> </p>
+                    <button id="btn-vald" type="submit">
+                        <p>0 $</p>
+                        <h2>Valider</h2>
+                        <p> --> </p>
+                    </button>
                 </div>
 
             </div>

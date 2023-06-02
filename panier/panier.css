@@ -213,16 +213,23 @@ a {
     font-size: 1.5rem;
 }
 
-.total-2 {
+#btn-vald {
+    width: 100%;
+    display: flex;
     margin-top: 2.5rem;
     margin-bottom: 2rem;
-    display: flex;
     justify-content: space-between;
     background-color: #ADFF45;
     padding: 0.8rem;
     border-radius: 15px;
+    border: none;
+    cursor: pointer;
 }
 
-.total-2 p {
+#btn-vald p {
+    font-size: 1.5rem;
+}
+
+#btn-vald h2 {
     font-size: 1.5rem;
 }
