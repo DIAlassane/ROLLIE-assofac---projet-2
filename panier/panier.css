@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #0B3E27;
+}
+
+header img {
+    width: 5%;
+    margin-left: 2rem;
+}
+
+nav {
+    margin: 1.5rem;
+}
+
+nav a {
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-panier {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: 1px solid black;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: #ADFF45;
+}
+
+.btn-panier .iconify {
+    padding-right: 0.5rem;
+}
+
+.btn-panier h3 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main */
+
+#basketProduit {
+    display: flex;
+    width: 80%;
+    margin-top: 3rem;
+    margin-left: 10%;
+    border-top: 1px solid #0B3E27;
+    border-bottom: 1px solid #0B3E27;
+}
+
+.panier--2 {
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    float: left;
+}
+
+#titre-panier {
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-top: 7rem;
+}
+
+#blockImage {
+    width: 40%;
+    margin-top: 3rem;
+}
+
+#blockImage img {
+    width: 100%;
+}
+
+.flex-column-around {
+    width: 30%;
+    margin-left: 7%;
+    margin-top: 4rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-column-around h2 {
+    font-size: 2rem;
+
+}
+
+.flex-column-around p {
+    margin-bottom: 0.4rem;
+}
+
+.flex-centre {
+    width: 100%;
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+
+.bouton-moins {
+    font-size: 3rem;
+    background-color: white;
+    border: none;
+}
+
+.produit-quantite {
+    font-size: 3rem;
+}
+
+.bouton-plus {
+    font-size: 2.7rem;
+    background-color: white;
+    border: none;
+}
+
+/* Paiement */
+
+.paiement {
+    width: 40%;
+    height: 100vh;
+    float: right;
+}
+
+.contenant {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 7rem;
+    border-radius: 25px;
+    background-color: #0B3E27;
+    padding: 1.5rem;
+}
+
+#h3-1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.carte-accepter {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1.5rem;
+}
+
+.carte-accepter img {
+    width: 25%;
+}
+
+.nom-carte {
+    width: 100%;
+}
+
+.nom-carte h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.input-1 {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.exp-cvc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.exp-cvc .nom-carte:first-child {
+    margin-right: 0.5rem;
+}
+
+.exp-cvc .nom-carte:last-child .input-1{
+    padding: 0.81rem;
+}
+
+#hr-paiement {
+    border: 0.3px solid #ADFF45;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.total {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total h2 {
+    font-size: 1.5rem;
+    font-family: arial;
+    font-weight: 100;
+}
+
+.total p {
+    font-size: 1.5rem;
+}
+
+.total-2 {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ADFF45;
+    padding: 0.8rem;
+    border-radius: 15px;
+}
+
+.total-2 p {
+    font-size: 1.5rem;
+}
