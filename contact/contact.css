@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #0B3E27;
+}
+
+header img {
+    width: 5%;
+    margin-left: 2rem;
+}
+
+nav {
+    margin: 1.5rem;
+}
+
+nav a {
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-panier {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: 1px solid black;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: #ADFF45;
+}
+
+.btn-panier .iconify {
+    padding-right: 0.5rem;
+}
+
+.btn-panier h3 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* recherche */ 
+
+.reserch {
+    margin-top: 3rem;
+}
+
+.reserch h2 {
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background-color: #d4d4d4;
+}
+
+.reserch iframe {
+    margin-left: 5%;
+}
+
+.iffo {
+    display: flex;
+}
+
+.info-cont {
+    display: block;
+}
+
+.information {
+    margin-left: 2.5rem;
+}
+
+.information button {
+    font-size: 1rem;
+    border: 0.5px solid black;
+    padding: 1rem 6rem 1rem 6rem;
+    color: #ADFF45;
+    font-weight: 600;
+    background-color: #0B3E27;
+    cursor: pointer;
+}
+
+.tab-content {
+    margin-left: 2.6rem;
+    margin-top: 2.5rem;
+}
+
+.tab-content h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tab-content h4 {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.copy {
+    display: flex;
+    width: 34%;
+    justify-content: space-between;
+    border: 0.5px solid #ADFF45;
+    background-color: #0B3E27;
+    color: white;
+    padding: 0.5rem;
+}
+
+.iconify {
+    color: white;
+    cursor: pointer;
+}
+
+.iconify:hover {
+    color: #ADFF45;
+}
+
+.reseaux {
+    margin-top: 1rem;
+    width: 43%;
+}
+
+.reseaux .iconify {
+    color: black;
+    width: 10%;
+    height: 7vh;
+    justify-content: space-between;
+    margin-right: 2.5rem;
+    color: #ADFF45;
+}
+
+.contact .email {
+    font-size: 1rem;
+    padding: 0.5rem 4.3rem 0.5rem 4.3rem;
+    background-color: #d4d4d4;
+}
+
+.iconify2 {
+    color: #ADFF45;
+    height: 5vh;
+    width: 10%;
+}
