@@ -104,6 +104,11 @@ a {
     background-color: #d4d4d4;
 }
 
+.grid a {
+    display: flex;
+}
+
+
 .ggrid h3 {
     margin-top: 5rem;
     margin-left: 2rem;
@@ -121,6 +126,8 @@ a {
     font-family: cursive;
 }
 
+/* FOOTER */
+
 footer {
     justify-content: center;
     text-align: center;
@@ -132,4 +139,58 @@ footer {
 footer h2 {
     padding-top: 5rem;
     font-weight: 100;
+}
+
+/* --------------__ ------------ RESPONSIVE ----------___--------- */
+
+@media screen and (max-width: 1175px) {
+    .ggrid {
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+        background-color: #d4d4d4;
+    }
+
+    .ggrid img {
+        width: 15%;
+        margin-left: 5rem;
+    }
+    
+
+    .grid a {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 929px) {
+    #montreban {
+        display: none;
+    }
+
+    .banniere {
+        background: url(/img/montreban.png);
+        width: 100%;
+        height: 55vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .ns h1 {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+    .pro h2 {
+        font-size: 1.3rem;
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .grid a {
+        display: flex;
+    }
+    
 }

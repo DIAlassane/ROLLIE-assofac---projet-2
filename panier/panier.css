@@ -51,7 +51,11 @@ a {
     color: black;
 }
 
-/* Main */
+/* --------------------    ------------ Main ----------- ------------------- ---- */
+
+#basket {
+    margin-bottom: 9rem;
+}
 
 #basketProduit {
     display: flex;
@@ -131,6 +135,7 @@ a {
     width: 40%;
     height: 100vh;
     float: right;
+    margin-bottom: 5rem;
 }
 
 .contenant {
@@ -232,4 +237,114 @@ a {
 
 #btn-vald h2 {
     font-size: 1.5rem;
+}
+
+.renseignement {
+    clear: both;
+    padding: 7rem;
+    background-color:#8B9781;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 0.3rem;
+    justify-content: center;
+    background-color: #0B3E27;
+}
+
+footer img {
+    width: 5%;
+}
+
+.iconify {
+    height: 6vh;
+    width: 100%;
+}
+
+.reseaux1 {
+   width: 10%;
+   display: flex;
+   padding: 0.5rem;
+}
+
+.reseaux2 {
+    width: 10%;
+    display: flex; 
+    padding: 0.5rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1297px) {
+    .exp-cvc {
+        display: block;
+    }
+
+    #basket {
+        margin-bottom: 15rem;
+    }
+}
+
+@media screen and (max-width: 1127px) {
+    #basket {
+        clear: both;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .panier--2 {
+        height: 50vh;
+    }
+    
+
+    .paiement {
+        clear: both;
+        margin-right: 15%;
+        width: 70%;
+        margin-bottom: 15rem;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    .iconify {
+        height: 6vh;
+        width: 100%;
+        margin-right: 0.5rem;
+    }
+
+    .reseaux1 {
+        width: 20%;
+    }
+
+    .reseaux2 {
+        width: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 630px) {
+    .renseignement {
+        padding: 4rem;
+    }
+
+    .iconify {
+        height: 6vh;
+        width: 100%;
+        margin-right: 0.5rem;
+    }
+
+    .reseaux1 {
+        width: 20%;
+    }
+
+    .reseaux2 {
+        width: 20%;
+    }
+
 }
