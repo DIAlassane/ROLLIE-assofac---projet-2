@@ -1,0 +1,295 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+  }
+  body {
+	height: auto;
+	/* background-color: #fffcf2; */
+
+	width: 100%;
+	background: #ADFF45;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #0B3E27;
+}
+
+header a {
+    margin-top: 1rem;
+}
+
+header img {
+    width: 100%;
+    margin-left: 2.5%;
+}
+
+#logo {
+    width: 5%;
+}
+
+nav {
+    margin: 1.5rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-a {
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+	color: black;
+}
+
+#bn {
+	color: black;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.btn-panier {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: 1px solid black;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: #ADFF45;
+}
+
+.btn-panier .iconify {
+    padding-right: 0.5rem;
+}
+
+.btn-panier h3 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* _____________      -------------  ---------  BODY ----------____________ ______________ */
+
+.accordion1 {
+	color: #ADFF45;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: center;
+	background-color: #042c1a;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	padding: 1rem;
+  }
+  
+  .active, .accordion1:hover {
+	background-color: #ADFF45; 
+  }
+  
+  .panel1 {
+	display: none;
+	background-color: white;
+	overflow: hidden;
+	width: 80%;
+	margin-left: 10%;
+	padding: 0.2rem;
+  }
+
+  .panel1 h3 {
+	padding: 0.5rem;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 1rem;
+  }
+
+  .panel1 p {
+	  padding: 0.5rem;
+  }
+
+  .accordion2 {
+	color: #ADFF45;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: center;
+	background-color: #042c1a;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	padding: 1rem;
+  }
+  
+  .active, .accordion1:hover {
+	background-color: #ADFF45; 
+  }
+  
+  .panel2 {
+	display: none;
+	background-color: white;
+	overflow: hidden;
+	width: 80%;
+	margin-left: 10%;
+	padding: 0.2rem;
+  }
+
+  .filt {
+	display: block;
+  }
+
+  .panel2 input {
+	padding: 0.3rem;
+	border-radius: 5px;
+	width: 100%;
+	color: #D9D9D9;
+  }
+
+  .panel2 h3 {
+	padding: 0.5rem;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 1rem;
+  }
+
+  .panel2 p {
+	  padding: 0.5rem;
+  }
+  
+h2 {
+	font-weight: 600;
+	margin: 1em;
+	text-align: center;
+	color: #000000;
+}
+
+.span {
+	width: 50%;
+	margin-top: 1rem;
+}
+
+.span img {
+	width: 15%;
+	margin: 0.5rem;
+}
+
+#galerie {
+	width:auto;
+	background: white;
+	margin-top:25px;
+	padding:15px;
+	text-align:center;
+}
+
+.galerie_block{
+	border-bottom: 1px solid #000;
+	width: 80%;
+	margin-left: 10%;
+	height: 250px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#insc {
+	padding: 0.3rem;
+	background-color: #0B3E27;
+	color: white;
+	margin-top: 0.5rem;
+	border: 1px solid #042c1a;
+	cursor: pointer;
+	font-size: 0.6rem;
+}
+
+#btn-pnr2 {
+	color: #000;
+	text-decoration: none;
+	background-color: #ADFF45;
+	padding: 1rem;
+	border: 1px solid #0B3E27;
+	width: 20%;
+	margin-top: 6.2rem;
+	margin-bottom: 6.2rem;
+}
+
+#galerie_mini {
+	display: flex;
+	margin-left:0;
+	margin-right: auto;
+	padding:0px;
+	list-style-type:none;
+	margin-right: 3rem;
+}
+
+#galerie_mini li a img {
+	justify-content: left;
+	margin:2px 1px;
+	width: 80%;
+	justify-content: left;
+}
+
+.description-produit {
+	margin-top: 6rem;
+	list-style: none;
+	font-weight: 100;
+}
+
+#photo
+{
+	clear:both;
+	margin:0 auto;
+	margin-top:50px;
+}
+
+#photo dt {
+	font: 50px Calibri;
+	color: black;
+}
+
+#photo dd {
+	margin:0;
+}
+
+#photo img {
+	border:1px solid black;
+	width : auto;
+	height : auto;
+}
+
+.section_D {
+	width: 100%;
+	height: 300px;
+	background-color: #D9D9D9;
+}
+
+.section_D p {
+	width: 500px;
+	height: auto;
+	padding-top: 8%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section_texte{
+	width: 100%;
+	height: 300px;
+	background-color: #8B9781;
+}
+
+.section_texte p{
+	width: 550px;
+	height: auto;
+	padding-top: 8%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

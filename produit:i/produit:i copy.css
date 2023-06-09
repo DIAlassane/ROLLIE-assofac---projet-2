@@ -10,33 +10,71 @@
 	/* background-color: #fffcf2; */
 
 	width: 100%;
-	background:#fff5e0;;
+	background: #ADFF45;
   }
-  .nav ul {
-	margin: 0px;
-	padding: 0px;
-	background: #5e6472;
-	list-style: none;
-  }
-  .nav a {
-	padding: 2em;
-	margin-left: 30px;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	color: white;
-	display: block;
-	text-align: center;
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #0B3E27;
+}
+
+header a {
+    margin-top: 1rem;
+}
+
+header img {
+    width: 100%;
+    margin-left: 2.5%;
+}
+
+#logo {
+    width: 5%;
+}
+
+nav {
+    margin: 1.5rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-a {
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+	color: black;
+}
+
+#bn {
+	color: black;
+	font-size: 1rem;
 	text-decoration: none;
-  }
-  .nav .menu {
-	display: flex; /*Défini l’affichage en mode flexbox*/
-	flex-direction: row; /*Aligne les enfants de notre élément*/
-	justify-content: center; /*alligne au centre les enfant de notre élément courant*/
+}
+
+.btn-panier {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: 1px solid black;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: #ADFF45;
+}
+
+.btn-panier .iconify {
+    padding-right: 0.5rem;
+}
+
+.btn-panier h3 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* _____________      -------------  ---------  BODY ----------____________ ______________ */
+
   
-	@media (max-width: 350px) {
-	  flex-flow: column wrap; /*Mobile: affiche les enfants par colonnes et on autorise le retour à la ligne*/
-	}
-  }
   h2 {
 	font-weight: 600;
 	margin: 1em;
@@ -47,14 +85,14 @@
 #galerie
 {
 	width:auto;
-	background:#fff5e0;
+	background: white;
 	/* border:1px solid #9e6a02; */
 	margin-top:25px;
 	padding:15px;
 	text-align:center;
 }
 .galerie_block{
-	border: 1px solid red;
+	border: 1px solid #ADFF45;
 	width: 100%;
 	height: 250px;
 }
@@ -71,7 +109,7 @@
 {
 	justify-content: center;
 	margin:2px 1px;
-	border:1px solid #c95b0d;
+	border:1px solid #000000;
 }
 #photo
 {
@@ -81,8 +119,8 @@
 }
 #photo dt
 {
-	font:italic 50px Calibri;
-	color:#9e6a02;
+	font: 50px Calibri;
+	color: black;
 }
 #photo dd
 {
@@ -90,7 +128,7 @@
 }
 #photo img
 {
-	border:1px solid #9e6a02;
+	border:1px solid black;
 	width : auto;
 	height : auto;
 }
