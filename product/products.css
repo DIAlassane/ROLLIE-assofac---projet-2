@@ -11,20 +11,37 @@ header {
     background-color: #0B3E27;
 }
 
+header a {
+    margin-top: 1rem;
+}
+
 header img {
+    width: 100%;
+    margin-left: 2.5%;
+}
+
+#logo {
     width: 5%;
-    margin-left: 2rem;
 }
 
 nav {
     margin: 1.5rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
 }
 
-nav a {
+#nav-a {
     margin: 1rem;
     font-size: 1rem;
     text-decoration: none;
-    color: black;
+	color: black;
+}
+
+#bn {
+	color: black;
+	font-size: 1rem;
+	text-decoration: none;
 }
 
 .btn-panier {
@@ -45,6 +62,8 @@ nav a {
     font-size: 1rem;
     font-weight: 800;
 }
+
+/* MAIN ------------------------ ----------------------- ------------------- ------ */
 
 a {
     text-decoration: none;
@@ -98,38 +117,258 @@ a {
 }
 
 .ggrid {
-    width: 31%;
-    margin: 1%;
+    width: 33%;
+    margin: 0.1rem;
     display: flex;
     background-color: #d4d4d4;
+    height: 25vh;
 }
 
+.grid a {
+    display: flex;
+}
+
+
 .ggrid h3 {
-    margin-top: 5rem;
-    margin-left: 2rem;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
     margin-bottom: 0.5rem;
 }
 
 .ggrid img {
-    width: 30%;
+    width: 25%;
     margin-left: 4rem;
 }
 
+#img img {
+    width: 15%;
+}
+
 .descrip p {
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-weight: 100;
     font-family: cursive;
+    font-size: 0.5rem;
+    padding: 0.2rem;
 }
 
-footer {
+.btn-atc {
+    background-color: #0B3E27;
+    padding: 1rem;
+    margin-top: 20%;
+    border-radius: 6px 6px 0 0;
+    margin-left: 2rem;
+}
+
+.btn-atc button {
+    color: #ADFF45;
+    background-color: #0B3E27;
+    border: none;
+
+}
+
+/* FOOTER */
+
+  /* FOOTER */
+
+  footer {
+    display: flex;
+    width: 100%;
+    padding: 0.3rem;
     justify-content: center;
-    text-align: center;
-    height: 15rem;
-    background-color: #8B9781;
-    margin-top: 5rem;
+    background-color: #0B3E27;
 }
 
-footer h2 {
-    padding-top: 5rem;
-    font-weight: 100;
+footer img {
+    width: 5%;
+}
+
+.iconify {
+    height: 6vh;
+    width: 100%;
+}
+
+.reseaux1 {
+   width: 10%;
+   display: flex;
+   padding: 0.5rem;
+}
+
+.reseaux2 {
+    width: 10%;
+    display: flex; 
+    padding: 0.5rem;
+}
+
+#morph-imgl2 {
+    width: 29%;
+}
+
+#morph-imgl3 {
+    width: 23%;
+}
+
+/* -------------   --------------    ------------ CARROUSSEL ----------- -------------    -------------- */
+
+.img {
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    opacity: 0;
+}
+
+.contenant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodies {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show {
+    opacity: 1;
+}
+
+.burger {
+    display: none;
+}
+
+
+/* --------------__ ------------ RESPONSIVE ----------___--------- */
+
+@media screen and (max-width: 1176px) {
+
+    .btn-panier h3 {
+        font-size: 1.5rem;
+    }
+
+    .ggrid {
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+        background-color: #d4d4d4;
+    }
+
+    .ggrid img {
+        width: 20%;
+        margin-left: 5rem;
+    }
+
+    .grid img {
+        margin-left: 10rem;
+        margin-right: 1rem;
+    }
+
+    #imgg img {
+        width: 15%;
+    }    
+
+    .grid a {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 1002px) {
+
+    .blocka {
+		display: block;
+	}
+
+    nav {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+		height: auto;
+	}
+
+	.accordion5 {
+        color: #ADFF45;
+        width: 50%;
+        background-color: #042c1a;
+		border: none;
+        outline: none;
+        font-size: 35px;
+        transition: 0.4s;
+		margin: 1.5rem;
+      }
+
+	  .accordion5 .iconify {
+		width: 100%;
+	  }
+      
+      .active, .accordion5:hover {
+        background-color: #ADFF45; 
+      }
+      
+      .panel5 {
+        display: none;
+        background-color: #042c1a;
+        overflow: hidden;
+        width: 70%;
+        margin-right: 0;
+        padding: 0.2rem;
+		margin-bottom: 2rem;
+      }
+
+      .panel5 p {
+          padding: 0.4rem;
+      }
+
+	  .panel5 p a {
+		color: black;
+	}
+
+}
+
+
+@media screen and (max-width: 929px) {
+
+    .btn-panier h3 {
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
+    }
+
+    #montreban {
+        display: none;
+    }
+
+    .banniere {
+        background: url(/img/montreban.png);
+        width: 100%;
+        height: 55vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .ns h1 {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+    .pro h2 {
+        font-size: 1.3rem;
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .grid a {
+        display: flex;
+    }
+
+    .grid img {
+        margin-left: 5rem;
+        margin-right: 1rem;
+    }
+    
 }

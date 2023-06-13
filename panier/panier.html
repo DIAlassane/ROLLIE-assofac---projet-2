@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="panier.css">
+    <script src="panier.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="/img/ROLEX.png" alt="">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="/contact/contact.html">Contact</a>
+        </nav>
+        <a href="#">
+        <div class="btn-panier">
+            <a href="#">
+            <h3>Buy now</h3>
+            </a>
+        </div></a>
+    </header>
+
+    <main>
+
+        <section id="basket" class="panier--2">
+            <div id="blockTitrePanier" class="flex-start size60">
+                <h2 id="titre-panier">
+                    VEUILLEZ AJOUTER DES PRODUITS AU PANIER <br>
+                    PAS DE PROSUIT
+                </h2>
+            </div>
+            <div id="basket-fiche" class="flex-around">
+                <div id="injectJs">
+                    <div id="basketProduit" class="flex-around">
+                        <div id="blockImage">
+                            <img src="/img-panier/rolexnoir-panier.png" alt="image-rolex">
+                        </div>
+                        <div id="blockProduit" class="flex-column-around">
+                            <h2>Produit</h2>
+                            <p>vernis</p>
+                            <p>0 $</p>
+                            <p>REF : 00000000000</p>
+                            <p>En-stock</p>
+                        </div>
+                        <div id="block-change-produit" class="flex-around">
+                            <div class="flex-centre">
+                                <button class="bouton-moins">-</button>
+                                <span class="produit-quantite">0</span>
+                                <button class="bouton-plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="paiement">
+
+            <div class="contenant">
+
+                <div class="type-carte">
+                    <h3 id="h3-1">types de cartes autoriser</h3>
+
+                    <div class="carte-accepter">
+                        <img src="/img-panier/mastercard.png" alt="">
+                        <img src="/img-panier/visa.png" alt="">
+                        <img src="/img-panier/rupay.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="nom-carte">
+                    <h3>Nom du titulaire</h3>
+                    <input class="input-1" type="text" name="nom" required>
+                </div>
+
+                <div class="nom-carte">
+                    <h3>Numero de la carte</h3>
+                    <input class="input-1" type="text" name="numero-carte" required>
+                </div>
+
+                <div class="exp-cvc">
+
+                    <div class="nom-carte">
+                        <h3>Date d'expiration</h3>
+                        <input class="input-1" type="date" name="date-exp" required>
+                    </div>
+
+                    <div class="nom-carte">
+                        <h3>CVC</h3>
+                        <input class="input-1" type="text" name="cvc" required>
+                    </div>
+                    
+                </div>
+
+                <hr id="hr-paiement">
+
+                <div class="total">
+                    <h2>Total</h2>
+                    <p>0 $</p>
+                </div>
+
+                <div class="total">
+                    <h2>Livraison</h2>
+                    <p>0 $</p>
+                </div>
+
+                <div class="total">
+                    <h2>Total (tax incl.)</h2>
+                    <p>0 $</p>
+                </div>
+
+                <div class="total-2">
+                    <button id="btn-vald" type="submit">
+                        <p>0 $</p>
+                        <h2>Valider</h2>
+                        <p> --> </p>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </main>
+
+<div class="renseignement">
+
+            <p>
+                Le prix et la disponibilité des articles sont sujets à changement. <br>
+                Le panier est un lieu temporaire où est stockée une liste <br>
+                de vos articles et où se reflète le prix le plus récent <br>
+                de chaque article.
+            </p>
+            
+        </div>
+
+    <footer>
+        <div class="reseaux1">
+            <a href="#"><span class="iconify" data-icon="skill-icons:instagram"></span></a>
+            <a href="#"><span class="iconify" data-icon="devicon:linkedin"></span></a>
+        </div>
+        <img src="/img/ROLEX.png" alt="">
+        <div class="reseaux2">
+            <a href="#"><span class="iconify" data-icon="skill-icons:discord"></span></a>
+            <a href="#"><span class="iconify" data-icon="skill-icons:twitter"></span></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

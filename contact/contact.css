@@ -11,13 +11,21 @@ header {
     background-color: #0B3E27;
 }
 
-header img {
+header a {
     width: 5%;
-    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+header img {
+    width: 100%;
+    margin-left: 2.5%;
 }
 
 nav {
     margin: 1.5rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
@@ -29,7 +37,7 @@ nav a {
 
 .btn-panier {
     display: flex;
-    margin-top: 1rem;
+    margin-top: 1.7rem;
     margin-right: 2rem;
     border: 1px solid black;
     padding: 0.7rem;
@@ -91,6 +99,10 @@ a {
     cursor: pointer;
 }
 
+.information button a {
+    color: #ADFF45;
+}
+
 .tab-content {
     margin-left: 2.6rem;
     margin-top: 2.5rem;
@@ -118,9 +130,14 @@ a {
     padding: 0.5rem;
 }
 
-.iconify {
+.copy p {
+    margin-top: 0.7rem;
+}
+
+.copy .iconify {
     color: white;
     cursor: pointer;
+    width: 10%;
 }
 
 .iconify:hover {
@@ -147,8 +164,187 @@ a {
     background-color: #d4d4d4;
 }
 
-.iconify2 {
-    color: #ADFF45;
-    height: 5vh;
+ul {
+    width: 50%;
+    background-color: #0B3E27;
+    list-style: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+}
+
+ul li {
+    font-size: 2rem;
+    color: white;
+    padding: 0.2rem;
+}
+
+.ul-2 {
+    width: 80%;
+}
+  
+  .renseignement {
+    clear: both;
+    padding: 7rem;
+    background-color:#8B9781;
+    text-align: center;
+}
+
+  /* FOOTER */
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 0.3rem;
+    justify-content: center;
+    background-color: #0B3E27;
+}
+
+footer img {
+    width: 5%;
+}
+
+.iconify {
+    height: 6vh;
+    width: 100%;
+}
+
+.reseaux1 {
+   width: 10%;
+   display: flex;
+   padding: 0.5rem;
+}
+
+.reseaux2 {
     width: 10%;
+    display: flex; 
+    padding: 0.5rem;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1325px) {
+    .information button {
+        font-size: 1rem;
+        border: 0.5px solid black;
+        padding: 0.7rem 4rem 0.7rem 4rem;
+        color: #ADFF45;
+        font-weight: 400;
+        background-color: #0B3E27;
+        cursor: pointer;
+    }
+
+    .ul-2 {
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    .reseaux {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .reseaux .iconify {
+        width: 6%;
+    }
+    
+}
+
+@media screen and (max-width: 1127px) {
+    .information button {
+        padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+    }
+
+    ul li {
+        font-size: 1.5rem;
+    }
+
+    .iconify {
+        height: 6vh;
+        width: 100%;
+        margin-right: 0.5rem;
+    }
+
+    .copy .iconify {
+        width: 15%;
+    }
+
+    .reseaux1 {
+        width: 20%;
+    }
+
+    .reseaux2 {
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 981px) {
+
+    .information button {
+        display: none;
+    }
+
+    .iffo {
+        display: block;
+    }
+
+    .reserch iframe {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .tab-content {
+        margin-left: 20%;
+        margin-top: 2.5rem;
+    }
+
+    .ul-2 {
+        width: 75%;
+    }
+
+    ul {
+        width: 75%;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    .reseaux {
+        width: 75%;
+        margin-bottom: 1rem;
+    }
+
+    .reserch h2 {
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    .renseignement {
+        padding: 4rem;
+    }
+
+    .iconify {
+        height: 6vh;
+        width: 100%;
+        margin-right: 0.5rem;
+    }
+
+    .reseaux1 {
+        width: 20%;
+    }
+
+    .reseaux2 {
+        width: 20%;
+    }
+
 }

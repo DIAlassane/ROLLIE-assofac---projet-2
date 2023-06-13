@@ -7,22 +7,53 @@
     <title>Rolex</title>
     <link rel="stylesheet" href="contact.css">
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="contact.js"></script>
 </head>
 <body>
 
     <header>
-        <img src="/img/ROLEX.png" alt="">
+        <a href="#"><img src="/img/ROLEX.png" alt=""></a>
         <nav>
             <a href="#">Home</a>
-            <a href="/product/products.htmlw2">Products</a>
+            <button class="accordion">Products</button>
+            <div class="panel">
+                <p><a href="/product/products.html">collection - 1</a></p>
+                <p><a href="/product/products.html">collection - 2</a></p>
+            </div>
             <a href="#">Contact</a>
         </nav>
         <a href="#">
         <div class="btn-panier">
-        <span class="iconify" data-icon="raphael:cart"></span>
         <h3>Buy now</h3>
         </div></a>
     </header>
+
+    <style>
+        .accordion {
+          color: black;
+          cursor: pointer;
+          width: 20%;
+          border: none;
+          text-align: center;
+          background-color: #0B3E27;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: #ADFF45; 
+        }
+        
+        .panel {
+          display: none;
+          background-color: white;
+          overflow: hidden;
+          width: 40%;
+          margin-right: 0;
+          padding: 0.2rem;
+        }
+        </style>
 
     <main>
             <div class="reserch">
@@ -40,9 +71,9 @@
             
                     <div class="info-cont">
                         <div class="information">
-                            <button>Adresse/Contact</button>
-                            <button>MDL</button>
-                            <button>MDP</button>
+                            <button><a href="#">Adresse/Contact</a></button>
+                            <button><a href="#mdl">MDL</a></button>
+                            <button><a href="#mdp">MDP</a></button>
                         </div>
 
                         <div class="tab-content" id="adresse">
@@ -73,10 +104,20 @@
                         <div class="tab-content" id="mdl">
                             <h3>Mode de Livraison</h3>
                             <ul>
-                                <span class="iconify2" data-icon="mdi:truck-fast"></span>
                                 <li>Livraison en 24h</li>
-                                <li><span class="iconify2" data-icon="mdi:truck"></span>Livraison en 3 jours</li>
-                                <li><span class="iconify2" data-icon="cil:boat-alt"></span>ßlivraison en 30 jours comptant</li>
+                                <li>Livraison en 3 jours</li>
+                                <li>livraison en 30 jours comptant</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="mdp">
+                            <h3>Mode de Paiement</h3>
+                            <ul class="ul-2">
+                                <li>Visa</li>
+                                <li>Mastercard</li>
+                                <li>American Express</li>
+                                <li>- paiement en Ligne / Retrait en magasin</li>
+                                <li>- paiement en ligne / Livraison <a href="#">(consulter MDL)</a></li>
                             </ul>
                         </div>
                         
@@ -84,6 +125,48 @@
                 </div>
             </div>
     </main>
+
+    <div class="renseignement">
+
+        <p>
+            Le prix et la disponibilité des articles sont sujets à changement. <br>
+            Le panier est un lieu temporaire où est stockée une liste <br>
+            de vos articles et où se reflète le prix le plus récent <br>
+            de chaque article.
+        </p>
+        
+    </div>
+
+<footer>
+    <div class="reseaux1">
+        <a href="#"><span class="iconify" data-icon="skill-icons:instagram"></span></a>
+        <a href="#"><span class="iconify" data-icon="devicon:linkedin"></span></a>
+    </div>
+    <img src="/img/ROLEX.png" alt="">
+    <div class="reseaux2">
+        <a href="#"><span class="iconify" data-icon="skill-icons:discord"></span></a>
+        <a href="#"><span class="iconify" data-icon="skill-icons:twitter"></span></a>
+    </div>
+</footer>
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
     
 </body>
 </html>

@@ -11,18 +11,66 @@
 <body>
 
     <header>
-        <img src="/img/ROLEX.png" alt="">
+        <a id="logo" href="#"><img src="/img/ROLEX.png" alt=""></a>
+        <span class="burger">
+          <button class="accordion5"><span class="iconify" data-icon="iconamoon:arrow-down-2-bold"></span></button>
+  
+          <div class="panel5">
+            <p><a href="/product/products.html">Home</a></p>
+            <p><a href="/product/products.html">Products</a></p>
+            <p><a href="/product/products.html">Contact</a></p>
+        </div>
+  
+        </span>
+  
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="/contact/contact.html">Contact</a>
+            <a id="nav-a" href="#">Home</a>
+            <button class="accordion">Products</button>
+            <div class="panel">
+                <p><a href="/product/products.html">collection - 1</a></p>
+                <p><a href="/product/products.html">collection - 2</a></p>
+            </div>
+            <a id="nav-a" href="/contact/contact.html">Contact</a>
         </nav>
-        <a href="#">
+        <a id="bn" href="#">
         <div class="btn-panier">
-        <span class="iconify" data-icon="raphael:cart"></span>
         <h3>Buy now</h3>
         </div></a>
+  
     </header>
+
+    <style>
+        .accordion {
+          color: black;
+          cursor: pointer;
+          width: 20%;
+          border: none;
+          text-align: center;
+          background-color: #0B3E27;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: #ADFF45; 
+        }
+        
+        .panel {
+          display: none;
+          background-color: white;
+          overflow: hidden;
+          width: 40%;
+          margin-right: 0;
+          padding: 0.2rem;
+        }
+
+        .panel p {
+            padding: 0.4rem;
+        }
+        </style>
+
+
     <main>
         <div class="banniere">
             <img id="montreban" src="/img/montreban.png" alt="">
@@ -31,76 +79,104 @@
                 <a href="#">Explorez la Collection</a>
             </div>
         </div>
+
+        <div class="bodies">
+
+        <div class="contenant">
+            <img src="/img/Rolex2023-everose-green-dial.png" alt="" class="img img-1 show">
+            <img src="/img/Rolex2023-gold-flamme.png" alt="" class="img img-2">
+            <img src="/img/Rolex2023white-gold-light-blue-dial.png" alt="" class="img img-3">
+        </div>
+        
+        </div>
+
         <div class="pro">
             <h2>Collection - 1</h2>
 
-            <div class="grid">
-                <div class="ggrid">
+            <div class="grid"><a href="#">
+                <div class="ggrid" id="imgg">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Neptuna, 36mm,<br> couleur vert-spacial <br> Talecrampté</p>
                     </div>
-                    <img src="/img/montre1.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img id="morph-imgl3" src="/img/montre1.png" alt=""></a>
                 </div>
-                <div class="ggrid">
+                <div class="ggrid" id="imgg"><a href="/produit:i/produit:i.html">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Oyster, 34mm, <br> couleur or-argent <br> Hein</p>
                     </div>
-                    <img src="/img/montre2.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img id="morph-imgl3" src="/img/montre2.png" alt=""></a>
                 </div>
-                <div class="ggrid">
+                <div class="ggrid" id="imgg"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Classique, 40mm, <br> couleur argent <br> Apanian</p>
                     </div>
-                    <img src="/img/montre3.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img src="/img/montre3.png" alt=""></a>
                 </div>
             </div>
             <div class="grid">
-                <div class="ggrid">
+                <div class="ggrid" id="imgg"><a href="/daytona/rolex.html">
                     <div class="descrip">
-                        <h3>NOm du modele</h3>
-                        <p>Neptuna, 36mm,<br> couleur vert-spacial <br> Talecrampté</p>
+                        <h3>Cosmograph Daytona</h3>
+                        <p>Daytona, 36mm,<br> couleur bleu-spacial <br> Argent</p>
                     </div>
-                    <img src="/img/montre1.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img src="/img/montre-acier-2.png" alt=""></a>
                 </div>
-                <div class="ggrid">
+                <div class="ggrid" id="imgg"><a href="/produit:i/1908.html">
                     <div class="descrip">
-                        <h3>NOm du modele</h3>
-                        <p>Oyster, 34mm, <br> couleur or-argent <br> Hein</p>
+                        <h3>1908</h3>
+                        <p>Cuir, 34mm, <br> couleur or / argent <br> or</p>
                     </div>
-                    <img src="/img/montre2.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img src="/img/montre-cuir-2.png" alt=""></a>
                 </div>
-                <div class="ggrid">
+                <div class="ggrid" id="imgg"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Classique, 40mm, <br> couleur argent <br> Apanian</p>
                     </div>
-                    <img src="/img/montre3.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img src="/img/montre-or-3.png" alt=""></a>
                 </div>
             </div>
             <div class="grid">
-                <div class="ggrid">
+                <div class="ggrid"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Neptuna, 36mm,<br> couleur vert-spacial <br> Talecrampté</p>
                     </div>
-                    <img src="/img/montre1.png" alt="">
-                </div>
-                <div class="ggrid">
-                    <div class="descrip">
-                        <h3>NOm du modele</h3>
-                        <p>Oyster, 34mm, <br> couleur or-argent <br> Hein</p>
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
                     </div>
-                    <img src="/img/montre2.png" alt="">
+                    <img id="morph-imgl2" src="/img/montre-or-2.png" alt=""></a>
                 </div>
-                <div class="ggrid">
+                <div class="ggrid" id="imgg"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Classique, 40mm, <br> couleur argent <br> Apanian</p>
                     </div>
-                    <img src="/img/montre3.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img src="/img/montre-or-4.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -109,72 +185,47 @@
             <h2>Collection - 2</h2>
 
             <div class="grid">
-                <div class="ggrid">
+                <div class="ggrid" id="imgg"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Neptuna, 36mm,<br> couleur vert-spacial <br> Talecrampté</p>
                     </div>
-                    <img src="/img/montre1.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img src="/img/montre-cuir-3.png" alt=""></a>
                 </div>
-                <div class="ggrid">
+                <div class="ggrid"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Oyster, 34mm, <br> couleur or-argent <br> Hein</p>
                     </div>
-                    <img src="/img/montre2.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img src="/img/montre-cuir-4.png" alt=""></a>
                 </div>
-                <div class="ggrid">
+                <div class="ggrid"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Classique, 40mm, <br> couleur argent <br> Apanian</p>
                     </div>
-                    <img src="/img/montre3.png" alt="">
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
+                    </div>
+                    <img src="/img/montre-or-5.png" alt=""></a>
                 </div>
             </div>
             <div class="grid">
-                <div class="ggrid">
+                <div class="ggrid"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Neptuna, 36mm,<br> couleur vert-spacial <br> Talecrampté</p>
                     </div>
-                    <img src="/img/montre1.png" alt="">
-                </div>
-                <div class="ggrid">
-                    <div class="descrip">
-                        <h3>NOm du modele</h3>
-                        <p>Oyster, 34mm, <br> couleur or-argent <br> Hein</p>
+                    <div class="btn-atc">
+                        <button>Ajouter</button>
                     </div>
-                    <img src="/img/montre2.png" alt="">
-                </div>
-                <div class="ggrid">
-                    <div class="descrip">
-                        <h3>NOm du modele</h3>
-                        <p>Classique, 40mm, <br> couleur argent <br> Apanian</p>
-                    </div>
-                    <img src="/img/montre3.png" alt="">
-                </div>
-            </div>
-            <div class="grid">
-                <div class="ggrid">
-                    <div class="descrip">
-                        <h3>NOm du modele</h3>
-                        <p>Neptuna, 36mm,<br> couleur vert-spacial <br> Talecrampté</p>
-                    </div>
-                    <img src="/img/montre1.png" alt="">
-                </div>
-                <div class="ggrid">
-                    <div class="descrip">
-                        <h3>NOm du modele</h3>
-                        <p>Oyster, 34mm, <br> couleur or-argent <br> Hein</p>
-                    </div>
-                    <img src="/img/montre2.png" alt="">
-                </div>
-                <div class="ggrid">
-                    <div class="descrip">
-                        <h3>NOm du modele</h3>
-                        <p>Classique, 40mm, <br> couleur argent <br> Apanian</p>
-                    </div>
-                    <img src="/img/montre3.png" alt="">
+                    <img id="morph-imgl2" src="/img/montre-or-6.png" alt=""></a>
                 </div>
             </div>
         </div>        
@@ -186,6 +237,23 @@
                 des actions dessus</h2>
         </footer>
     </main>
+
+    <footer>
+        <div class="reseaux1">
+            <a href="#"><span class="iconify" data-icon="skill-icons:instagram"></span></a>
+            <a href="#"><span class="iconify" data-icon="devicon:linkedin"></span></a>
+        </div>
+        <img src="/img/ROLEX.png" alt="">
+        <div class="reseaux2">
+            <a href="#"><span class="iconify" data-icon="skill-icons:discord"></span></a>
+            <a href="#"><span class="iconify" data-icon="skill-icons:twitter"></span></a>
+        </div>
+    </footer>   
+    
+    <script src="/product/products.js"></script>
+    
+
+    
     
 </body>
 </html>
