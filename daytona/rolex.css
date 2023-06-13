@@ -217,16 +217,14 @@ h2 {
 #galerie_mini {
 	display: flex;
 	margin-left:0;
-	margin-right: auto;
 	padding:0px;
 	list-style-type:none;
-	margin-right: 3rem;
+	width: 50%;
 }
 
 #galerie_mini li a img {
-	justify-content: left;
 	margin:2px 1px;
-	width: 80%;
+	width: 100%;
 	justify-content: left;
 }
 
@@ -234,10 +232,10 @@ h2 {
 	margin-top: 6rem;
 	list-style: none;
 	font-weight: 100;
+	margin-right: 15rem;
 }
 
-#photo
-{
+#photo {
 	clear:both;
 	margin:0 auto;
 	margin-top:50px;
@@ -246,6 +244,10 @@ h2 {
 #photo dt {
 	font: 50px Calibri;
 	color: black;
+}
+
+.list-1 {
+	width: 50%;
 }
 
 #photo dd {
@@ -292,4 +294,108 @@ h2 {
 	color: white;
 	text-decoration: none;
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.burger {
+	display: none;
+}
+
+@media screen and (max-width: 1002px) {
+
+	#logo {
+		width: 8%;
+	}	
+
+	.blocka {
+		display: block;
+	}
+
+	.galerie_block {
+		display: grid;
+		height: 60vh;
+	}
+
+	#galerie_mini li a img {
+		margin:2px 1px;
+		width: 100%;
+		justify-content: center;
+		margin-left: 14rem;
+	}
+
+	.description-produit {
+		margin-top: 0rem;
+		list-style: none;
+		font-weight: 100;
+		margin-left: 25%;
+		width: 50%;
+	}
+
+	.section_D {
+		height: 25vh;
+	}
+
+	.section_D p {
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 0;
+	}
+
+	.section_texte{
+		height: 28vh;
+		background-color: #8B9781;
+	}
+	
+	.section_texte p{
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 0;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+		height: auto;
+	}
+
+	.accordion5 {
+        color: #ADFF45;
+        width: 50%;
+        background-color: #042c1a;
+		border: none;
+        outline: none;
+        font-size: 35px;
+        transition: 0.4s;
+		margin: 1.5rem;
+      }
+
+	  .accordion5 .iconify {
+		width: 100%;
+	  }
+      
+      .active, .accordion5:hover {
+        background-color: #ADFF45; 
+      }
+      
+      .panel5 {
+        display: none;
+        background-color: #042c1a;
+        overflow: hidden;
+        width: 70%;
+        margin-right: 0;
+        padding: 0.2rem;
+		margin-bottom: 2rem;
+      }
+
+      .panel5 p {
+          padding: 0.4rem;
+      }
+
+	  .panel5 p a {
+		color: black;
+	}
+
+	
 }

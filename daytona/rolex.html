@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/produit:i/produit:i.css" />
-    <script src="galerie.js"></script>
+    <link rel="stylesheet" href="/daytona/rolex.css" />
+    <script src="/daytona/rolex.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
 
@@ -16,6 +17,17 @@
 
     <header>
       <a id="logo" href="#"><img src="/img/ROLEX.png" alt=""></a>
+      <span class="burger">
+        <button class="accordion5"><span class="iconify" data-icon="iconamoon:arrow-down-2-bold"></span></button>
+
+        <div class="panel5">
+          <p><a href="/product/products.html">Home</a></p>
+          <p><a href="/product/products.html">Products</a></p>
+          <p><a href="/product/products.html">Contact</a></p>
+      </div>
+
+      </span>
+
       <nav>
           <a id="nav-a" href="#">Home</a>
           <button class="accordion">Products</button>
@@ -50,7 +62,7 @@
       
       .panel {
         display: none;
-        background-color: white;
+        background-color: #042c1a;
         overflow: hidden;
         width: 40%;
         margin-right: 0;
@@ -60,6 +72,10 @@
       .panel p {
           padding: 0.4rem;
       }
+
+      .panel p a {
+        color: black;
+      }
       </style>
 
       <button class="accordion1">SERVICES et INFO</button>
@@ -68,8 +84,8 @@
           <h3>SERVICES APRÉS VENTES POSSIBLES</h3>
 
           <p>Retrait en magasin / Inscription sur liste pour <br>
-          <strong> Modéle : 1962</strong></p>
-          <p>Livraison sous 30 jours</p>
+          <strong> Modéle : Cosmograph Daytona</strong></p>
+          <p>Livraison sous 3 mois ou plus</p>
           <p>Nettoyage Mensuel</p>
 
           <h3>MODE DE PAIEMENTS POSSIBLES</h3>
@@ -89,12 +105,12 @@
 
     <div id="galerie">
       <dl id="photo">
-        <dt>ROLEX 1908 - 36mm</dt>
+        <dt>ROLEX Daytona - 36mm</dt>
         <!--  identifie un terme dans une liste de définitions ou de descriptions. -->
         <dd>
           <img
             id="la_photo"
-            src="/img/montre-cuir-2.png"
+            src="/img/montre-acier-2.png"
             alt="Photo 1"
             style="width: 200px"
           />
@@ -104,17 +120,18 @@
       <div class="galerie_block">
         <ul id="galerie_mini">
           <li class="list-1">
-            <a href="/img/montre-cuir-4.png" title="Photo 2"
-              ><img src="/img/montre-cuir-4.png" alt="Photo 2"
+            <a href="/img/daytona.png" title="Photo 2"
+              ><img src="/img/daytona.png" alt="Photo 2"
             /></a>
           </li>
         </ul>
         <ul class="description-produit">
           <li>Modéle 1908</li>
-          <li>Montre en Argent</li>
+          <li>Montre en or / Argent</li>
           <li>Polie - bracelet en cuir</li>
         </ul>
 
+        <div class="blocka">
         <ul class="filt">
 
           <button class="accordion2">Inscription Liste 1962</button>
@@ -129,6 +146,8 @@
         </ul>
 
         <a id="btn-pnr2" href="#">Panier</a>
+      </div>
+
       </div>
     </div>
 
@@ -150,7 +169,7 @@
       </div>
     </section>
 
-    <script src="/produit:i/produit:i.js"></script>
+    <script src="/produit:i/1908.js"></script>
 
 </body>
 </html>

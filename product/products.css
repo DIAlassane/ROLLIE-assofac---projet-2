@@ -13,7 +13,6 @@ header {
 
 header a {
     margin-top: 1rem;
-    color: black;
 }
 
 header img {
@@ -32,16 +31,22 @@ nav {
     justify-content: center;
 }
 
-nav a {
+#nav-a {
     margin: 1rem;
     font-size: 1rem;
     text-decoration: none;
-    color: black;
+	color: black;
+}
+
+#bn {
+	color: black;
+	font-size: 1rem;
+	text-decoration: none;
 }
 
 .btn-panier {
     display: flex;
-    margin-top: 1.7rem;
+    margin-top: 1rem;
     margin-right: 2rem;
     border: 1px solid black;
     padding: 0.7rem;
@@ -57,6 +62,8 @@ nav a {
     font-size: 1rem;
     font-weight: 800;
 }
+
+/* MAIN ------------------------ ----------------------- ------------------- ------ */
 
 a {
     text-decoration: none;
@@ -141,7 +148,8 @@ a {
     margin-left: 1rem;
     font-weight: 100;
     font-family: cursive;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    padding: 0.2rem;
 }
 
 .btn-atc {
@@ -227,9 +235,14 @@ footer img {
     opacity: 1;
 }
 
+.burger {
+    display: none;
+}
+
+
 /* --------------__ ------------ RESPONSIVE ----------___--------- */
 
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1176px) {
 
     .btn-panier h3 {
         font-size: 1.5rem;
@@ -261,6 +274,61 @@ footer img {
     }
 
 }
+
+@media screen and (max-width: 1002px) {
+
+    .blocka {
+		display: block;
+	}
+
+    nav {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+		height: auto;
+	}
+
+	.accordion5 {
+        color: #ADFF45;
+        width: 50%;
+        background-color: #042c1a;
+		border: none;
+        outline: none;
+        font-size: 35px;
+        transition: 0.4s;
+		margin: 1.5rem;
+      }
+
+	  .accordion5 .iconify {
+		width: 100%;
+	  }
+      
+      .active, .accordion5:hover {
+        background-color: #ADFF45; 
+      }
+      
+      .panel5 {
+        display: none;
+        background-color: #042c1a;
+        overflow: hidden;
+        width: 70%;
+        margin-right: 0;
+        padding: 0.2rem;
+		margin-bottom: 2rem;
+      }
+
+      .panel5 p {
+          padding: 0.4rem;
+      }
+
+	  .panel5 p a {
+		color: black;
+	}
+
+}
+
 
 @media screen and (max-width: 929px) {
 
