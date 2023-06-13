@@ -7,6 +7,7 @@
     <title>Rolex</title>
     <link rel="stylesheet" href="products.css">
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
 <body>
 
@@ -90,11 +91,25 @@
         
         </div>
 
+        <div class="fltr">
+
+            <button class="accordion667"><span class="iconify" data-icon="icon-park-twotone:three-triangles"></span>Filtre*</button>
+
+            <div class="panel667">
+                <button class="btn667" onclick="filterObjects('tout')">Tous</button>
+                <button class="btn667" onclick="filterObjects('or')">Or</button>
+                <button class="btn667" onclick="filterObjects('argent')">Argent</button>
+                <button class="btn667" onclick="filterObjects('acier')">Acier</button>
+                <button class="btn667" onclick="filterObjects('cuir')">cuir</button>
+            </div>
+
+        </div>
+
         <div class="pro">
             <h2>Collection - 1</h2>
 
             <div class="grid"><a href="#">
-                <div class="ggrid" id="imgg">
+                <div class="ggrid box acier" id="imgg">
                     <div class="descrip">
                         <h3>Explorer 40</h3>
                         <p>Neptuna, 40mm,<br> couleur vert-spacial</p>
@@ -104,7 +119,7 @@
                     </div>
                     <img id="morph-imgl3" src="/img/montre1.png" alt=""></a>
                 </div>
-                <div class="ggrid" id="imgg"><a href="/produit:i/produit:i.html">
+                <div class="ggrid box or" id="imgg"><a href="/produit:i/produit:i.html">
                     <div class="descrip">
                         <h3>Explorer 40</h3>
                         <p>Neptuna, 40mm, <br> couleur or-argent</p>
@@ -114,7 +129,7 @@
                     </div>
                     <img id="morph-imgl3" src="/img/montre2.png" alt=""></a>
                 </div>
-                <div class="ggrid" id="imgg"><a href="#">
+                <div class="ggrid box argent" id="imgg"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Classique, 40mm, <br> couleur argent <br> Apanian</p>
@@ -126,7 +141,7 @@
                 </div>
             </div>
             <div class="grid">
-                <div class="ggrid" id="imgg"><a href="/daytona/rolex.html">
+                <div class="ggrid box argent" id="imgg"><a href="/daytona/rolex.html">
                     <div class="descrip">
                         <h3>Cosmograph Daytona</h3>
                         <p>Daytona, 36mm,<br> couleur bleu-spacial <br> Argent</p>
@@ -136,7 +151,7 @@
                     </div>
                     <img src="/img/montre-acier-2.png" alt=""></a>
                 </div>
-                <div class="ggrid" id="imgg"><a href="/produit:i/1908.html">
+                <div class="ggrid box cuir" id="imgg"><a href="/produit:i/1908.html">
                     <div class="descrip">
                         <h3>1908</h3>
                         <p>Cuir, 34mm, <br> couleur or / argent <br> or</p>
@@ -153,7 +168,7 @@
             <h2>Collection - 2</h2>
 
             <div class="grid">
-                <div class="ggrid" id="imgg"><a href="#">
+                <div class="ggrid box acier" id="imgg"><a href="#">
                     <div class="descrip">
                         <h3>NOm du modele</h3>
                         <p>Neptuna, 36mm,<br> couleur vert-spacial <br> Talecrampté</p>
@@ -163,7 +178,7 @@
                     </div>
                     <img src="/img/montre-cuir-3.png" alt=""></a>
                 </div>
-                <div class="ggrid"><a href="#">
+                <div class="ggrid box cuir"><a href="#">
                     <div class="descrip">
                         <h3>1908</h3>
                         <p>Cuir, 34mm, <br> couleur or / argent <br>or</p>
